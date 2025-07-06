@@ -1,0 +1,62 @@
+# QwertyEncryption.java
+
+## 🔐 QWERTY-Based Message Encryption for Banking System
+
+This Java class provides a simple encryption and hashing mechanism tailored for obfuscating sensitive messages in banking applications. It uses a rotated QWERTY layout for character substitution and supports optional dual-key encryption after 8 characters. It also provides a SHA-256 hash for integrity.
+
+---
+
+## 🧰 Features
+- QWERTY-based encryption using a user-defined starting letter
+- Dual-key mapping for added complexity
+- SHA-256 hashing of encrypted messages
+- Decryption using reverse-mapped keys
+- Console-based user interaction
+
+---
+
+## 📂 File Structure
+- `QwertyEncryption.java`: Main source file containing all logic
+
+---
+
+## 🚀 How to Use
+1. **Compile the code**:
+```bash
+javac QwertyEncryption.java
+```
+2. **Run the application**:
+```bash
+java QwertyEncryption
+```
+3. Follow the prompts:
+   - Choose to encrypt or decrypt
+   - Enter your message
+   - Provide the first starting letter
+   - (Optional) Enter a second starting letter if your message is long enough
+
+---
+
+## 📄 Sample
+```
+Do you want to (E)ncrypt or (D)ecrypt a message? E
+Enter the message to encrypt: SecureLogin
+Enter the first starting letter: Q
+Enter the second starting letter for characters after the 8th: M
+Encrypted Message: WTAKILFZTGX
+SHA-256 Hashed Encrypted Message: 14c868ec... (64-char hash)
+```
+
+---
+
+## ⚠️ Notes
+- This works properly only upto 16 digits.
+- This is not a cryptographically secure cipher.
+- Suitable for obfuscation and educational projects.
+- Do not use for storing real passwords.
+
+---
+
+## 👤 Author
+*Sunil Aryal*  
+Created as part of a **Banking System project**.
